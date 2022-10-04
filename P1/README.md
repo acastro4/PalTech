@@ -2,7 +2,7 @@
 
 ### Diagrama de conexiones electricas:
 
-![Diagrama de Conexiones](https://github.com/acastro4/PalTech/blob/main/P1/1_pregunta_de_disen%CC%83o_v2.png "Diagrama")
+<img src="https://github.com/acastro4/PalTech/blob/main/P1/1_pregunta_de_disen%CC%83o_v2.png" alt="drawing" width="800"/>
 
 
 ### Componentes
@@ -12,8 +12,8 @@ Arduino uno\
 Raspberry Pi
 
 ### Conexiones:
-Se escoge conectar los motores de la forma *Differential Signal*:
-![Diagrama de Conexiones](https://github.com/acastro4/PalTech/blob/main/P1/Diagrama_motor.png)
+Se escoge conectar los motores de la forma *Differential Signal*:\
+<img src="https://github.com/acastro4/PalTech/blob/main/P1/Diagrama_motor.png" alt="drawing" width="400"/>
 
 En el diagrama solo se muestran las conexiones al motor para su control (No se incluye ni poder, ni alarma) desde un Arduino. Ademas, se incluyen la conexión serial entre arduino y el sistema embebido, el cual en este caso sera un Raspberry Pi 3.
 
