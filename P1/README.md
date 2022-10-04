@@ -17,6 +17,6 @@ Se escoge conectar los motores de la forma *Differential Signal*:\
 
 En el diagrama solo se muestran las conexiones al motor para su control (No se incluye ni poder, ni alarma) desde un Arduino. Ademas, se incluye la conexión serial entre arduino y el sistema embebido, el cual en este caso sera un Raspberry Pi 3.
 
-No se incluyen octocupulas de protección ya que en el diagrama entregado por el fabricante se ve que ya cuenta con estas.
+No se incluyen octocupulas de protección entre arduino y motor, ya que en el diagrama entregado por el fabricante se ve que ya cuenta con estas.
 
 [Link Datasheet utilizado](https://www.jmc-motor.com/file/1806080877.pdf)
