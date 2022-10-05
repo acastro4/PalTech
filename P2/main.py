@@ -7,7 +7,7 @@ import robot
 import plotlib
 import cluster
 
-SEED = 0
+SEED = 314
 X = 2000
 Y = 500
 SIZE = 100
@@ -17,7 +17,7 @@ C1 = "blue"
 C2 = "purple"
 C3 = "green"
 C4 = "orange"
-TYPEOFCLUSTER = 1 # 0: Horizonal, 1: Vertical, 2: 45º, 3: 25 puntos por robot angulo dinamico, 4: cluster KNN
+TYPEOFCLUSTER = 2 # 0: Vertical, 1: Horizontal, 2: 45º, 3: 25 puntos por robot angulo dinamico, 4: cluster KNN?
 POS_ROBOT_1 = (X//2, 0, 0) # (pos x, pos y, index siempre 0)
 POS_ROBOT_2 = (X//2, 0, 0) # (pos x, pos y, index siempre 0)
 POS_ROBOT_3 = (X//2, 0, 0) # (pos x, pos y, index siempre 0)
@@ -57,5 +57,7 @@ plotlib.addToGraph(X, Y, SIZE, g1, g2, g3, g4, C1, C2, C3, C4, TYPEOFCLUSTER, PO
 limits=plt.axis('on') # turns on axis
 ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
 
+seg_type = "vertical" if TYPEOFCLUSTER == 0 else "horizontal" if TYPEOFCLUSTER == 1 else "diagonal"
+fig.suptitle(f'Mapa del recorrido usando segmentacion {seg_type} usando algoritmo TSP', fontsize=12)
 plt.show()
 
