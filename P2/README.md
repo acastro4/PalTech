@@ -1,1 +1,1 @@
-# Pregunta 2
+# P2 Pregunta de diseño algorítmico
