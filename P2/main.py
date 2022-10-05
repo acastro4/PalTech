@@ -7,7 +7,7 @@ import robot
 import plotlib
 import cluster
 
-SEED = 314
+SEED = 0
 X = 2000
 Y = 500
 SIZE = 100
