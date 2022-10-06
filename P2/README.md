@@ -22,6 +22,7 @@ Se implementaron 3 tipos clastering:
 1. Separación del campo en lineas verticales (0).
 2. Separación del campo en lineas horizontales (1).
 3. Separación del campo en lineas diagonales (2).
+4. separacion de campo en lineas diagonales con 25 puntos por zona (3).
 
 Se opta por separar los puntos de esta forma ya que al distribuir de forma uniforme en todo el campo, si separamos el campo en iguales forma, cada segmento deberia tener una cantidad similar al resto de los demas.\
 
