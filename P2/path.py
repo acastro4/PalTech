@@ -15,7 +15,7 @@ def getDis(p1, p2):
     return np.sqrt(((x1-x2) ** 2) + ((y1-y2) ** 2))
 
 
-def getTSPPath(g1, color, ax,bool_vis=False):
+def getTSPPath(g1, typeofTSP, color, ax, bool_vis=False):
     G1 = nx.Graph()
     G2 = nx.Graph()
 
@@ -31,7 +31,11 @@ def getTSPPath(g1, color, ax,bool_vis=False):
 
 
     tsp = nx.approximation.traveling_salesman_problem
-    path_tsp = tsp(G1, cycle=True)
+    if typeofTSP == 0:
+        path_tsp = tsp(G1, cycle=True, method= nx.approximation.christofides)
+    else:
+        path_tsp = tsp(G1, cycle=True, method=nx.approximation.greedy_tsp)
+        
     path_list = [(path_tsp[i],  path_tsp[i+1]) for i in range(len(path_tsp)-1)]
 
     G2.add_edges_from(path_list)

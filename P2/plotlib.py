@@ -29,7 +29,7 @@ def printAll(vel, t_ext, index_robots, tts, tps, tes, pathsSimples):
     for i in range(len(index_robots)):
         printRoboInfo(vel, t_ext, index_robots[i], tts[i], tps[i], tes[i], pathsSimples[i])
 
-def addToGraph(x, y, size, g1, g2, g3, g4, c1, c2, c3, c4, typeofcluster, pos_robot):
+def addToGraph(x, y, size, g1, g2, g3, g4, c1, c2, c3, c4, typeofcluster, pos_robot, bordes):
     x1 = [a[0] for a in g1]
     y1 = [a[1] for a in g1]
 
@@ -65,6 +65,11 @@ def addToGraph(x, y, size, g1, g2, g3, g4, c1, c2, c3, c4, typeofcluster, pos_ro
         plt.axline((pos_robot[0], pos_robot[1]), (0, y), color='r')
         plt.axline((pos_robot[0], pos_robot[1]), (pos_robot[0], pos_robot[1] + y), color='r')
         plt.axline((pos_robot[0], pos_robot[1]), (x, y), color='r')
+    
+    if typeofcluster == 3:
+        plt.axline((pos_robot[0], pos_robot[1]), (bordes[0][0], bordes[0][1]), color='r')
+        plt.axline((pos_robot[0], pos_robot[1]), (bordes[1][0], bordes[1][1]), color='r')
+        plt.axline((pos_robot[0], pos_robot[1]), (bordes[2][0], bordes[2][1]), color='r')
 
 
 if __name__ == "__main__":
