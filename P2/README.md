@@ -36,6 +36,8 @@ Debido a la complejidad del problema, se utiliza la libreria `Networkx` para res
 1. Se crea por segmento un grafo por segmento fully connected con pesos igual a su distancia entre los nodos.
 2. Se resuelve mediante `Traveling Salesman Problem ` donde se puede seleccionar dos tipos de algoritmos, `christofides` (0) y `greedy_tsp` (1)
 
+Variable: `TYPEOFTPS`
+
 Grafico
 ----------------
 
