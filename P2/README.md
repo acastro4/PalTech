@@ -34,7 +34,7 @@ Recorrido
 Debido a la complejidad del problema, se utiliza la libreria `Networkx` para resolver el problema mediante el uso de grafos de la siguiente forma:
 
 1. Se crea por segmento un grafo por segmento fully connected con pesos igual a su distancia entre los nodos.
-2. Se resuelve mediante `Traveling Salesman Problem ` con el algoritmo `christofides`
+2. Se resuelve mediante `Traveling Salesman Problem ` donde se puede seleccionar dos tipos de algoritmos, `christofides` (0) y `greedy_tsp` (1)
 
 Grafico
 ----------------
